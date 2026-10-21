@@ -1,11 +1,11 @@
 id,scenario,kind,expect,detected,latency_sec,files_damaged,recovered,verdict
-A1,"fast ransomware (50 files/s)",attack,detect,yes,0.044,3,60/60,PASS
-A2,"medium (2 files/s)",attack,detect,yes,1.003,3,60/60,PASS
-A3,"slow (1 file/s)",attack,detect,yes,4.011,5,60/60,PASS
-A4,"large files (1.5 MB each)",attack,detect,yes,0.279,6,75/75,PASS
-A5,"4 parallel workers",attack,detect,yes,0.004,3,60/60,PASS
-A6,"real AES-256, openssl per file",attack,detect,yes,0.316,6,60/60,PASS
-A7,"real AES-256, in-place overwrite",attack,detect,yes,0.125,3,60/60,PASS
+A1,"fast ransomware (50 files/s)",attack,detect,yes,0.117,6,60/60,PASS
+A2,"medium (2 files/s)",attack,detect,yes,2.52,6,60/60,PASS
+A3,"slow (1 file/s)",attack,detect,yes,7.021,8,60/60,PASS
+A4,"large files (1.5 MB each)",attack,detect,yes,0.316,6,75/75,PASS
+A5,"4 parallel workers",attack,detect,yes,0.008,3,60/60,PASS
+A6,"real AES-256, openssl per file",attack,detect,yes,0.353,6,60/60,PASS
+A7,"real AES-256, in-place overwrite",attack,detect,yes,0.148,3,60/60,PASS
 B1,"tar czf (compression)",benign,clean,no,,,,PASS
 B2,"cp -r (bulk copy)",benign,clean,no,,,,PASS
 B3,"python writes 40 text files",benign,clean,no,,,,PASS

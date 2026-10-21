@@ -1,0 +1,21 @@
+{
+  "watch_dirs": ["/tmp/rg_test/victim"],
+  "window_sec": 5,
+  "rate_threshold_files": 15,
+  "rate_points": 20,
+  "entropy_threshold": 7.5,
+  "write_points": 0,
+  "group_parent_min_members": 3,
+  "entropy_points": 10,
+  "min_sample_bytes": 512,
+  "ext_change_points": 15,
+  "suspend_score": 60,
+  "kill_score": 120,
+  "kill_after_suspend_sec": 5,
+  "whitelist_exe": ["/usr/bin/rsync", "/usr/bin/apt", "/usr/bin/dpkg"],
+  "natural_high_entropy_ext": [".zip", ".gz", ".xz", ".bz2", ".7z", ".jpg", ".jpeg", ".png", ".mp3", ".mp4", ".pdf", ".docx", ".xlsx", ".pptx"],
+  "known_ext": [".txt", ".md", ".csv", ".json", ".log", ".py", ".c", ".h", ".cpp", ".html", ".css", ".js", ".doc", ".docx", ".xlsx", ".pptx", ".pdf", ".jpg", ".png", ".zip", ".gz", ".tmp"],
+  "snapshot_dir": "/tmp/rg_test/snapshots",
+  "snapshot_max_mb": 50,
+  "log_file": "/tmp/rg_test/ransomguard.log"
+}
